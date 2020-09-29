@@ -55,13 +55,17 @@ const currentTime = document.querySelector(display);
               var uvIndex = response.current.uvi;
               $("#uv-container").text("UV Index: ");
               $("#uv-index").text(uvIndex);
-              if (uvIndex < 6) {
-                $("#uv-index").css("background-color", "#27cf2a");
-              } else if (uvIndex > 6 && uvIndex < 8) {
-                $("#uv-index").css("background-color", "#f0c543");
-              } else if (uvIndex >= 8) {
-                $("#uv-index").css("background-color", "#e35262");
-              }
+              if (uvIndex < 2.9) {
+                $("#uv-index").css("background-color", "#a5db45");
+              } else if (uvIndex > 3 && uvIndex < 5.9) {
+                $("#uv-index").css("background-color", "#ffd33e");
+              } else if (uvIndex > 6 && uvIndex < 7.9) {
+                $("#uv-index").css("background-color", "#fa8829");
+              }else if (uvIndex > 8 && uvIndex < 10.9) {
+                $("#uv-index").css("background-color", "#f93a2f");
+              }else if (uvIndex >= 11) {
+                $("#uv-index").css("background-color", "#d756d3");
+              } 
   
               $(".five-day-forecast").empty();
               for (i = 1; i <= 5; i++) {
@@ -152,13 +156,17 @@ const currentTime = document.querySelector(display);
               var uvIndex = response.current.uvi;
               $("#uv-container").text("UV Index: ");
               $("#uv-index").text(uvIndex);
-              if (uvIndex < 6) {
-                $("#uv-index").css("background-color", "#27cf2a");
-              } else if (uvIndex > 6 && uvIndex < 8) {
-                $("#uv-index").css("background-color", "#f0c543");
-              } else if (uvIndex >= 8) {
-                $("#uv-index").css("background-color", "#e35262");
-              }
+              if (uvIndex < 2.9) {
+                $("#uv-index").css("background-color", "#a5db45");
+              } else if (uvIndex > 3 && uvIndex < 5.9) {
+                $("#uv-index").css("background-color", "#ffd33e");
+              } else if (uvIndex > 6 && uvIndex < 7.9) {
+                $("#uv-index").css("background-color", "#fa8829");
+              }else if (uvIndex > 8 && uvIndex < 10.9) {
+                $("#uv-index").css("background-color", "#f93a2f");
+              }else if (uvIndex >= 11) {
+                $("#uv-index").css("background-color", "#d756d3");
+              }   
   
               $(".five-day-forecast").empty();
               for (i = 1; i <= 5; i++) {
@@ -225,12 +233,16 @@ const currentTime = document.querySelector(display);
               var uvIndex = response.current.uvi;
               $("#uv-container").text("UV Index: ");
               $("#uv-index").text(uvIndex);
-              if (uvIndex < 6) {
-                $("#uv-index").css("background-color", "#27cf2a");
-              } else if (uvIndex > 6 && uvIndex < 8) {
-                $("#uv-index").css("background-color", "#f0c543");
-              } else if (uvIndex >= 8) {
-                $("#uv-index").css("background-color", "#e35262");
+              if (uvIndex < 2.9) {
+                $("#uv-index").css("background-color", "#a5db45");
+              } else if (uvIndex > 3 && uvIndex < 5.9) {
+                $("#uv-index").css("background-color", "#ffd33e");
+              }else if (uvIndex > 6 && uvIndex < 7.9) {
+                $("#uv-index").css("background-color", "#fa8829");  
+              }else if (uvIndex > 8 && uvIndex < 10.9) {
+                $("#uv-index").css("background-color", "#f93a2f");
+              }else if (uvIndex >= 11) {
+                $("#uv-index").css("background-color", "#d756d3");
               }
   
               $(".five-day-forecast").empty();
