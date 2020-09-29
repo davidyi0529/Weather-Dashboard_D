@@ -12,8 +12,6 @@
   <script src="https://kit.fontawesome.com/b386b5e099.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>Weather-Dashboard_D</title>
-
 </head>
 
 <body>
@@ -28,7 +26,7 @@
 
     <header class="jumbotron">
         <!-- Real-time clock and date -->
-        <h1 id="currentDay"></h1>
+        <p id="currentDay"></p>
         <!-- Search Bar -->
             <form id="search-bar">
                 <input id="city" type="text" placeholder="City Search">
@@ -39,22 +37,22 @@
                 </form>
     </header>
 
-    <Section class="row no-gutters">
+    <div class="row no-gutters">
         <!-- History of searched cities on the left -->
         <div class="col-md-3 search-history">
-            <p class="your-favorite-cities mx-4">Search History   
+            <h6 class="your-favorite-cities mx-4">Search History   
             <span class="clear">Clear</span>
-            </p>
+            </h6>
             <ul class="list-group mx-4">
             </ul>
           </div>
   
       <!-- main city info -->
-      <div class="col-md-8 main-city ml-3">
+      <div class="col-md-8 ml-3">
         <div class="row no-gutters">
           <div class="main-city col-8 ml-3">
             <span id="city-name"></span>
-            <img id="weather-icon">
+            <img id="weather-icon" src="placeholder" alt="">
             <p id="temperature-max"></p>
             <p id="temperature-min"></p>
             <p id="humidity"></p>
@@ -64,10 +62,10 @@
         </div>
         
         <!-- 5 day forecast -->
-        <article class="row no-gutters">
+        <div class="row no-gutters">
           <div class="five-day-forecast mt-3">
           </div>
-        </article>
+        </div>
           
       
     <!-- Scripts -->
@@ -76,8 +74,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js" integrity="sha512-Izh34nqeeR7/nwthfeE0SI3c8uhFSnqxV0sI9TvTcXiFJkMd6fB644O64BRq2P/LA/+7eRvCw4GmLsXksyTHBg==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-      </body>
-      </html>
+     
+  </body>
+
+  </html>
 
     
 
